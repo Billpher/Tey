@@ -1,0 +1,218 @@
+header img {
+    width: 50px;
+    height: 50px;
+}
+
+header h2 {
+    font-family: "Kaushan Script", cursive;
+    color: #e5e0c7;
+}
+
+.navbar {
+    background-color: #8e9b5b;
+}
+
+.nav .nav-link {
+    color: #e5e0c7;
+    font-family: "Crimson Pro", serif;
+    font-size: 20px;
+}
+
+.nav .nav-link.active,
+.nav .nav-link.active:hover {
+    border-color: #e6c468;
+    color: #e6c468;
+}
+
+.nav .nav-link:hover {
+    border-color: #455b4f;
+    color: #455b4f;
+}
+
+/*-----------Sobre----------*/
+
+#sobre {
+    background-color: #e5e0c7;
+}
+
+#sobre h2,
+#sobre h3 {
+    font-family: "Kaushan Script", cursive;
+}
+
+
+#elementos img {
+    width: 90px;
+    filter: grayscale(100%);
+    transition: 2s ease-out;
+}
+
+#elementos img:hover {
+    filter: grayscale(0%) drop-shadow(5px 10px 5px #918d8d);
+    transition: 1s ease-in;
+}
+
+/*-----------Regioes----------*/
+
+#regioes {
+    background-color: #8e9b5b;
+}
+
+#regioes h2 {
+    font-family: "Kaushan Script", cursive;
+}
+
+.flipCard {
+    perspective: 1000px;
+    margin-bottom: 30px;
+}
+
+.flipCard .cardFrente img {
+    height: 360px;
+}
+
+.flipCard .cardTras img {
+    width: 256px;
+    height: 256px;
+}
+
+.cardInner {
+    position: relative;
+    transition: transform 5s;
+    transform-style: preserve-3d;
+}
+
+.cardFrente {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.cardFrente img {
+    position: relative;
+}
+
+.cardFrente .card-title {
+    position: absolute;
+    color: #e6c468;
+    top: 130px;
+    font-family: "Kaushan Script", cursive;
+}
+
+.card-title{
+    font-size: 70px;
+}
+
+.cardTras {
+    text-align: center;
+    background-color: #e6c468;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.flipCard:hover .cardInner {
+    transform: rotateY(180deg);
+}
+
+/*-----------Arcontes----------*/
+
+#arcontes {
+    background-color: #e5e0c7;
+}
+
+#arcontes h2, #arcontes h3 {
+    font-family: "Kaushan Script", cursive;
+}
+
+#arcontes .nav-link img {
+    filter: grayscale(100%);
+    transition: 2s ease-out;
+}
+
+#arcontes .nav-link.active img {
+    filter: grayscale(0%);
+}
+
+#arcontes p {
+    font-family: "Crimson Pro", serif;
+}
+
+.arcontes {
+    width: 600px;
+    height: 720px;
+}
+
+.arcontesNahida {
+    width: 660px;
+    height: 720px;
+}
+
+.visoes {
+    width: 100px;
+    height: 100px;
+}
+
+/*-----------Contato----------*/
+
+#contato {
+    background-color: #8e9b5b;
+}
+
+#contato h2, #contato h3 {
+    font-family: "Kaushan Script", cursive;
+}
+
+.textColor {
+    color: #e6c468;
+}
+
+.social li {
+    display: inline;
+    list-style: none;
+}
+
+.social li a {
+    text-decoration: none;
+}
+
+
+@media (min-width:768px) and  (max-width:1023px) {
+    #elementos img {
+        width: 100px;
+    }
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
+}
+
+@media (max-width:500px) {
+    #elementos img {
+        width: 50px;
+    }
+
+    #sobre h2 {
+        margin-top: 30px;
+    }
+
+    .flipCard .cardTras img {
+        width: 184px;
+        height: 184px;
+    }
+
+    .arcontes {
+        width: 300px;
+        height: 500px;
+    }
+    
+    .arcontesNahida {
+        width: 330px;
+        height: 500px;
+    }
+
+    .visoes {
+        width: 60px;
+        height: 60px;
+    }
+}
